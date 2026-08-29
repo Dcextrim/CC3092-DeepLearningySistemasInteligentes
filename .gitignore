@@ -1,0 +1,42 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Cachés y reportes de pruebas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Artefactos de entrenamiento
+*.pt
+*.pth
+*.ckpt
+runs/
+wandb/
+lightning_logs/
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
