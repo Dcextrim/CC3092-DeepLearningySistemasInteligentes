@@ -34,6 +34,10 @@ runs/
 wandb/
 lightning_logs/
 
+# Datasets descargados y figuras regenerables
+data/
+loss_curve.png
+
 # Editores y sistema operativo
 .vscode/
 .idea/
