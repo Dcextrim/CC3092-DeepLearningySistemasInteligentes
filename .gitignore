@@ -25,6 +25,8 @@ __pycache__/
 .coverage
 .coverage.*
 htmlcov/
+tmp/
+lab8.executing.ipynb
 
 # Artefactos de entrenamiento
 *.pt

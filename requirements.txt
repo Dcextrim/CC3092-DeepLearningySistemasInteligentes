@@ -1,0 +1,13 @@
+torch>=2.1
+transformers>=4.40,<6
+gensim>=4.4
+smart-open[http]>=7
+scikit-learn>=1.4
+numpy>=1.26
+matplotlib>=3.8
+notebook>=7
+ipykernel>=6
+nbformat>=5.10
+reportlab>=4.2
+pdfplumber>=0.11
+pypdf>=5

@@ -23,12 +23,8 @@ El notebook está organizado en los siguientes bloques:
 ## Requisitos
 
 - Python 3.10 o superior.
-- PyTorch.
-- Transformers (HuggingFace).
-- scikit-learn.
-- NumPy.
-- Matplotlib.
-- Jupyter Notebook o JupyterLab.
+- Dependencias enumeradas en `requirements.txt`, incluyendo PyTorch,
+  Transformers, scikit-learn, gensim y ReportLab.
 
 ## Instalación
 
@@ -38,7 +34,7 @@ En Windows PowerShell:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install torch transformers scikit-learn numpy matplotlib notebook ipykernel
+python -m pip install -r requirements.txt
 ```
 
 ## Ejecución
@@ -51,6 +47,13 @@ jupyter notebook
 
 Abra `lab8.ipynb`, seleccione el kernel de la `.venv` y ejecute las celdas en orden.
 
+También puede reproducir todas las salidas y construir el informe final con:
+
+```powershell
+.\.venv\Scripts\python.exe .\scripts\run_notebook.py
+.\.venv\Scripts\python.exe .\scripts\build_report.py
+```
+
 El entrenamiento del Mini-GPT corre en CPU (≈ 17–20 min para las 10 épocas) y no requiere GPU. La primera ejecución de la sección de BERT descarga `bert-base-multilingual-cased` desde Hugging Face (≈ 700 MB).
 
 
@@ -59,13 +62,19 @@ El entrenamiento del Mini-GPT corre en CPU (≈ 17–20 min para las 10 épocas)
 ```text
 .
 ├── lab8.ipynb
-├── cc3092-laboratorio-8.md
 ├── data/
 │   └── input.txt
 ├── loss_curve.png
 ├── bert_pca.png
-├── CLAUDE.md
+├── output/
+│   └── pdf/
+│       └── CC3092_Laboratorio_8_Entrega_Final.pdf
+├── scripts/
+│   ├── build_report.py
+│   ├── patch_notebook.py
+│   ├── run_notebook.py
+│   └── sync_notebook_analysis.py
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
-
