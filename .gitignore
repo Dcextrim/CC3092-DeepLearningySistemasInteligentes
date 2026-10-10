@@ -40,3 +40,10 @@ lightning_logs/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Datos descargados y checkpoints del laboratorio
+data/
+checkpoints/
+CLAUDE.md
+.agents
+skills-lock.json
